@@ -1,0 +1,65 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "recipient":{
+    "id":"1103710079675517"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+          {
+            "title":"Chat v\u1EDBi UETer",
+            "subtitle":"OK, b\u00E2y gi\u1EDD h\u00E3y b\u1EA5m n\u00FAt d\u01B0\u1EDBi \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u \u0111i th\u1EA3 th\u00EDnh n\u00E0o ^^!",
+            "buttons":[
+              {
+                "type":"postback",
+                "title":"B\u1EAFt \u0111\u1EA7u chat",
+                "payload":"START_CHAT"
+              }              
+            ]
+          }
+        ]
+      }
+    }
+  }
+}' "https://graph.facebook.com/v2.6/me/messages?access_token=EAAVZB47Qq64QBAKGfqeKHZCfDMrISVSPdHrhAZBXonrUOKaoEjlMBLsyoMQTyhc5HpFFhX2pPiPPZAmPi81AsxqpIB4uyZA86cwPEvMqMj9ZBgSux52oFwkUYHWstI0DCET4vsX5ZCxOypxt4FBrVQFZBvmk2ZAC8B98TrnAG5epBUgZDZD"
+
+==============================================================
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "recipient":{
+    "id":"1103710079675517"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+          {
+            "title":"Tr\u1EE5 s\u1EDF ch\u00EDnh c\u1EE7a UET n\u1EB1m \u1EDF t\u00F2a nh\u00E0 n\u00E0o?",
+            "subtitle":"Tr\u01B0\u1EDBc ti\u00EAn, b\u1EA1n c\u1EA7n x\u00E1c nh\u1EADn m\u00ECnh l\u00E0 UETer b\u1EB1ng c\u00E1ch tr\u1EA3 l\u1EDDi \u0111\u00FAng c\u00E2u h\u1ECFi tr\u00EAn",
+            "buttons":[
+              {
+                "type":"postback",
+                "title":"E1",
+                "payload":"CONFIRM_E1"
+              },              
+              {
+                "type":"postback",
+                "title":"E2",
+                "payload":"CONFIRM_E2"
+              },
+              {
+                "type":"postback",
+                "title":"E3",
+                "payload":"CONFIRM_E3"
+              },
+            ]
+          }
+        ]
+      }
+    }
+  }
+}' "https://graph.facebook.com/v2.6/me/messages?access_token=EAAVZB47Qq64QBAKGfqeKHZCfDMrISVSPdHrhAZBXonrUOKaoEjlMBLsyoMQTyhc5HpFFhX2pPiPPZAmPi81AsxqpIB4uyZA86cwPEvMqMj9ZBgSux52oFwkUYHWstI0DCET4vsX5ZCxOypxt4FBrVQFZBvmk2ZAC8B98TrnAG5epBUgZDZD"
